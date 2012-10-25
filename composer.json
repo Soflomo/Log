@@ -1,0 +1,29 @@
+{
+    "name": "soflomo/log",
+    "description": "Small module to help with logging aware classes",
+    "type": "library",
+    "keywords": [
+        "zf2",
+        "log"
+    ],
+    "homepage": "https://github.com/Soflomo/Log",
+    "authors": [
+        {
+            "name": "Jurian Sluiman",
+            "email": "jurian@soflomo.com",
+            "homepage": "http://soflomo.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3.",
+        "zendframework/zendframework": "2.0.*@beta"
+    },
+    "autoload": {
+        "psr-0": {
+            "Soflomo\\Log": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
