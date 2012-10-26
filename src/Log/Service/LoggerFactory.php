@@ -59,7 +59,7 @@ class LoggerFactory implements FactoryInterface
             }
             unset($options['enabled']);
 
-            $writer = $plugins->writerPlugin($name, $options);
+            $writer = $plugins->get($name, $options);
             $logger->addWriter($writer);
         }
 
