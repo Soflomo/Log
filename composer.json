@@ -1,6 +1,7 @@
 {
     "name": "soflomo/log",
     "description": "Small module to help with logging aware classes",
+    "license": "BSD-3-Clause",
     "type": "library",
     "keywords": [
         "zf2",
@@ -17,6 +18,10 @@
     "require": {
         "php": ">=5.3.3.",
         "zendframework/zendframework": "2.0.*@beta"
+    },
+    "suggest" : {
+        "firephp/firephp-core": "To enable logging with Fire-PHP",
+        "chromephp/chromephp": "To enable logging with Chrome-PHP"
     },
     "autoload": {
         "psr-0": {
