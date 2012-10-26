@@ -52,7 +52,7 @@ return array(
             ),
             'stream'     => array(
                 'enabled'         => true,
-                'stream'          => 'data/log/application.log'
+                'stream'          => 'data/log/application.log',
                 'fingers_crossed' => true,
                 'priority'        => Logger::ERR,
             ),

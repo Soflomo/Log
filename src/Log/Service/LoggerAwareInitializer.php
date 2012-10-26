@@ -52,7 +52,7 @@ class LoggerAwareInitializer implements InitializerInterface
         if ($instance instanceof LoggerAwareInterface) {
             static $logger;
             if (!$logger) {
-                $logger = $serviceLocator->get('Soflomo\Log\Logger')
+                $logger = $serviceLocator->get('Soflomo\Log\Logger');
             }
 
             $instance->setLogger($logger);
