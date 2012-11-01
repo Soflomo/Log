@@ -44,17 +44,20 @@ use Zend\Log\Logger;
 return array(
     'soflomo_log' => array(
         'writers' => array(
-            'firephp'    => array(
-                'enabled' => true,
+            'firephp'   => array(
+                'enabled'          => true,
+                //'check_dependency' => 'FirePHP',
             ),
-            'chromephp'  => array(
-                'enabled' => true,
+            'chromephp' => array(
+                'enabled'          => true,
+                //'check_dependency' => 'ChromePhp',
             ),
-            'stream'     => array(
-                'enabled'         => true,
-                'stream'          => 'data/log/application.log',
-                'fingers_crossed' => true,
-                'priority'        => Logger::ERR,
+            'stream'    => array(
+                'enabled'                  => true,
+                'fingers_crossed'          => true,
+                'fingers_crossed_priority' => Logger::ERR,
+                'priority'                 => Logger::INFO,
+                'stream'                   => 'data/log/application.log',
             ),
         ),
     ),
