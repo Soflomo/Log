@@ -41,6 +41,7 @@
 
 namespace Soflomo\Log\Service;
 
+use Zend\Log\Logger;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
